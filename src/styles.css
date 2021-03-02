@@ -1,0 +1,83 @@
+.Container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background: #314e52;
+}
+.emojiContainer {
+  width: 40vw;
+}
+.ratingContainer {
+  display: flex;
+  justify-content: center;
+  font-size: 15px;
+  position: fixed;
+  z-index: 1;
+  justify-content: space-between;
+  width: 42vw;
+  margin-left: -5px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #f0a500;
+}
+.rating {
+  margin-top: 15px;
+}
+.emojiOverlap {
+  margin-top: 30px;
+  transition: 0.3s;
+}
+
+.Input .ant-slider-handle {
+  width: 40px;
+  height: 40px;
+  margin-top: -20px;
+}
+.emojiList {
+  margin-top: -12px;
+  font-size: 20px;
+  display: flex;
+  position: fixed;
+  z-index: 1;
+  justify-content: space-between;
+  width: 41vw;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.emojiSlide {
+  height: 10px;
+  position: fixed;
+  z-index: 2;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  transition: width 0.5s;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.emojis {
+  font-size: 50px;
+  margin-right: -35px;
+}
+@media (max-width: 824px) {
+  .emojis {
+    margin-right: -30px;
+  }
+}
+.emojiOuter {
+  background: #f0a500;
+  width: 40vw;
+  height: 3px;
+  border-radius: 100px;
+  position: fixed;
+}
